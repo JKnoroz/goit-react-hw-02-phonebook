@@ -1,8 +1,10 @@
 import React from "react";
+import s from "./Filter.module.css";
 
 const Filter = ({ value, onChange }) => (
-  <label>
-    Filter <input type="text" value={value} onChange={onChange} />
+  <label className={s.label}>
+    Filter{" "}
+    <input type="text" className={s.input} value={value} onChange={onChange} />
   </label>
 );
 
